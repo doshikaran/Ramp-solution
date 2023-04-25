@@ -10,7 +10,9 @@ type TransactionsProps = { transactions: Transaction[] | null }
 
 type TransactionPaneProps = {
   transaction: Transaction
- 
+  loading: boolean
+  approved?: boolean
+  setTransactionApproval: SetTransactionApprovalFunction
 }
 
 export type TransactionsComponent = FunctionComponent<TransactionsProps>
